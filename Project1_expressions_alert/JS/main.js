@@ -1,22 +1,10 @@
-document.write(' Hello, World!');
+var A = "Hello, World!" //Created a variable containing a string
+window.alert(A); //Created a window alert displaying variable A
 
-var A = "This is a string|"
-document.write(A);
+var Sent1 = "This is the beginning of the string", Sent2 = " and this is the end of the string" //Created two variables
+document.write(Sent1 + Sent2); //Used the document.write to display variable A and B concatenated
 
-var B = "This is a string |"
-window.alert(B);
-
-document.write(" Lisa told Bart, \"Knock it off, Bart! Or I'll tell dad!\"<br>\"Eat my shorts!\" Bart responded. |");
-
-document.write(" \"Be who you are and say what you feel,"
-+ " because those who mind don't matter and those who matter don't mind.\""
-+ "-Dr.Seuss |");
-
-var C = "Concatenated" + "String |"
-document.write(C);
-
-var Family = "The Titus\' |", Dad = "Robert", Mom = "Silvia", Son = "Steven"
-document.write(Family)
-
-var D = 3+3
-document.write(D)
+function Expression_Function() { //Defining a function and naming it
+    var B = 3+3 ; //Defining a variable and giving it an expression
+    document.getElementById("Button_Text").innerHTML = B; //Putting the value of the variable into the HTML element FromPoint with the "Button_Text" id
+}
