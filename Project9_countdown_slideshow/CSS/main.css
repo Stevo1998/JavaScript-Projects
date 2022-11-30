@@ -1,8 +1,14 @@
 * {box-sizing:border-box}
 
+.center {
+    margin: auto;
+    text-align: center;
+}
+
 /*** Slide container ***/
-.Slideshow-container {
-    max-width: 1000px;
+.slideshow-container {
+    width: 640px;
+    height: 427px;
     position: relative;
     margin: auto;
 }
@@ -29,7 +35,6 @@
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
 }
 
 /*** Fading animation ***/

@@ -13,3 +13,19 @@ function showSlides() { //Defying and naming the function showSlides()
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+
+function countdown() {
+    var seconds = document.getElementById("seconds").value;
+
+    function tick() {
+        seconds = seconds - 1;
+        timer.innerHTML = seconds;
+        var time = setTimeout(tick, 1000);
+        if (seconds == -1) {
+            alert("Thanks for viewing my slide show!");
+            clearTimeout(time);
+            timer.innerHTML = "";
+        }
+    }
+    tick();
+}
